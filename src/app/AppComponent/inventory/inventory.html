@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+</head>
+
+<body>
+    <div class="mx-3 my-3">
+        <h1>Inventory Management</h1>
+    </div>
+    <div class="row mx-3">
+        <form action="" class="row gx-3 gy-2 align-items-center" (ngSubmit)="onSubmit()" novalidate>
+            <div class="row">
+                <div class="col-sm-3">
+                    <label for="">Product ID</label>
+                </div>
+                <div class="col-sm-3">
+                    <label for="">Product Name</label>
+                </div>
+                <div class="col-sm-3">
+                    <label for="">Quantity Available</label>
+                </div>
+                <div class="col-sm-3">
+                    <label for="">Reorder Point</label>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <label for="specificSizeInputName" class="visually-hidden">Product Id</label>
+                <input type="text" class="form-control" id="specificSizeInputName" placeholder="1001" [(ngModel)]="invertoryData.productId" name="productId" required>
+            </div>
+            <div class="col-sm-3">
+                <label for="specificSizeSelect" class="visually-hidden" >Product</label>
+                <select name="" id="specificSizeSelect" class="form-select" [(ngModel)]="invertoryData.productName" name="productName" required>
+                    <option value="" selected>Select Product</option>
+                    <option>Laptop</option>
+                    <option>Smartphone</option>
+                    <option>Tablet</option>
+                    <option>Smartwatch</option>
+                    <option>Headphones</option>
+                </select>
+            </div>
+            <div class="col-sm-3">
+                <label for="specificSizeInputName" class="visually-hidden">Quantity Available</label>
+                <input type="text" class="form-control" id="specificSizeInputName" placeholder="0" [(ngModel)]="invertoryData.availableQty" name="quantityAvailable" required>
+            </div>
+            <div class="col-sm-3">
+                <label for="specificSizeInputName" class="visually-hidden">Reorder Quantity</label>
+                <input type="text" class="form-control" id="specificSizeInputName" placeholder="0" [(ngModel)]="invertoryData.reorderPoint" name="reorderPoint" required>
+            </div>
+            <div class="col-auto">
+                <button class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="row mx-3 my-3">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Product ID</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Stock Available</th>
+                    <th scope="col">Reorder Point</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1001</td>
+                    <td>Laptop</td>
+                    <td>50</td>
+                    <td>10</td>
+                    <td><button class="btn btn-sm btn-primary">Edit</button> <button
+                            class="btn btn-sm btn-danger mx-2">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1002</td>
+                    <td>Smartphone</td>
+                    <td>150</td>
+                    <td>20</td>
+                    <td><button class="btn btn-sm btn-primary">Edit</button> <button
+                            class="btn btn-sm btn-danger mx-2">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1003</td>
+                    <td>Tablet</td>
+                    <td>80</td>
+                    <td>15</td>
+                    <td><button class="btn btn-sm btn-primary">Edit</button> <button
+                            class="btn btn-sm btn-danger mx-2">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
