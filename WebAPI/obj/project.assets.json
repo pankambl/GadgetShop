@@ -2040,11 +2040,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\WORK\\Angular\\GadgetShop\\WebAPI\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "D:\\WORK\\Angular\\GadgetShop\\gadget-shop\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "D:\\WORK\\Angular\\GadgetShop\\WebAPI\\WebAPI\\WebAPI.csproj",
+      "projectPath": "D:\\WORK\\Angular\\GadgetShop\\gadget-shop\\WebAPI\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\panka\\.nuget\\packages\\",
-      "outputPath": "D:\\WORK\\Angular\\GadgetShop\\WebAPI\\WebAPI\\obj\\",
+      "outputPath": "D:\\WORK\\Angular\\GadgetShop\\gadget-shop\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
