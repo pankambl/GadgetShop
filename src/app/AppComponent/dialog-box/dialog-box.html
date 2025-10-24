@@ -1,0 +1,23 @@
+<div class="ngb-modal-conte" role="dialog" aria-modal="true" tabindex="-1">
+    <div class="modal-header">
+        <h5 class="modal-title">Confirm Deletion</h5>
+        <button type="button" class="btn-close" aria-label="Close" aria-describedby="moadal-title"
+            (click)="modal.dismiss()">
+        </button>
+    </div>
+    <div class="modal-body">
+        <p>
+            <strong>
+                Are you sure you want to delete <span class="text-primary">this</span> inventory item?
+            </strong>
+        </p>
+        <p>
+            All associated data will be permanently removed and cannot be recovered.
+            <span class="text-danger">This operation cannot be undone.</span>
+        </p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="dismiss()">Cancel</button>
+        <button type="button" class="btn btn-danger" (click)="confirm()">Delete</button>
+    </div>
+</div>

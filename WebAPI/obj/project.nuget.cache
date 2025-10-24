@@ -1,8 +1,12 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "Qq0wDwSwsjk=",
+=======
+  "dgSpecHash": "g0uzT+6m+xY=",
+>>>>>>> b781019b93341a8d5ba35487a20c2d1bb0a2a8d6
   "success": true,
-  "projectFilePath": "D:\\WORK\\Angular\\GadgetShop\\WebAPI\\WebAPI\\WebAPI.csproj",
+  "projectFilePath": "D:\\WORK\\Angular\\GadgetShop\\gadget-shop\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\panka\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\panka\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",
