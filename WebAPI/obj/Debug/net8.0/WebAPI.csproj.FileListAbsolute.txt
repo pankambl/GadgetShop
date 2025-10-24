@@ -79,3 +79,4 @@ D:\WORK\Angular\GadgetShop\WebAPI\WebAPI\obj\Debug\net8.0\WebAPI.pdb
 D:\WORK\Angular\GadgetShop\WebAPI\WebAPI\obj\Debug\net8.0\WebAPI.genruntimeconfig.cache
 D:\WORK\Angular\GadgetShop\WebAPI\WebAPI\obj\Debug\net8.0\ref\WebAPI.dll
 D:\WORK\Angular\GadgetShop\WebAPI\WebAPI\obj\Debug\net8.0\WebAPI.sourcelink.json
+D:\WORK\Angular\GadgetShop\WebAPI\WebAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
