@@ -8,7 +8,7 @@
 </div>
 <div class="row mx-3">
     <h5>Customer Details</h5>
-    <table class="table table-bordered">
+    <table class="table table-bordered table-striped table-hover">
         <thead>
             <tr class="text-center align-middle bordered">
                 <th scope="col">#</th>
@@ -16,6 +16,7 @@
                 <th>Customer Name</th>
                 <th>Email</th>
                 <th>Phone Number</th>
+                <th>Registration Date</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -23,17 +24,20 @@
 
         </tbody>
         <tbody>
-            <!-- <tr class="text-center align-middle" *ngFor="let customer of customerDetails ; let i = index;">
+            <tr class="text-center align-middle" *ngFor="let customer of customerDetails ; let i = index;">
                 <th>{{ i + 1 }}</th>
-                <td>{{ customer.customerId }}</td>
-                <td>{{ customer.customerName }}</td>
-                <td>{{ customer.email }}</td>
-                <td>{{ customer.phoneNumber }}</td>
+                <td>{{ customer.CustomerId }}</td>
+                <td>{{ customer.FirstName}} {{ customer.LastName }}</td>
+                <td>{{ customer.Email }}</td>
+                <td>{{ customer.PhoneNumber }}</td>
+                <td>{{ customer.RegistrationDate}}</td>
                 <td>
-                    <button class="btn btn-sm btn-primary">Edit</button>
-                    <button class="btn btn-sm btn-danger mx-2">Delete</button>
+                    <button class="btn btn-sm btn-primary" (click)="editCustomerDetails(customer)">Edit</button>
+                    <button class="btn btn-sm btn-danger mx-2"
+                        (click)="openConfirmDialog(customer.CustomerId)">Delete</button>
                 </td>
-            </tr> -->
+            </tr>
+
         </tbody>
     </table>
 </div>
