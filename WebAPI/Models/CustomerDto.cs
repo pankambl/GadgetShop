@@ -1,6 +1,6 @@
 namespace WebAPI.Models
 {
-  public class CustomerRequestDto
+  public class CustomerDto
   {
     #region properties
     public int CustomerId { get; set; }
@@ -9,7 +9,6 @@ namespace WebAPI.Models
     public string PhoneNumber { get; set; }
     public string Email { get; set; }
     public string RegistrationDate { get; set; }
-
 
     #endregion
   }
