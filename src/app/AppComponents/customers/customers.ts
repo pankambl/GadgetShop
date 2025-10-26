@@ -35,7 +35,7 @@ export class Customers {
   }
 
   private loadCustomers(): void {
-    const apiurl = 'https://gadget-shop-pk.netlify.app/Customer';
+    const apiurl = 'https://localhost:7261/api/Customer';
 
     this.httpClient.get<any>(apiurl).subscribe({
       next: (data) => {
@@ -88,7 +88,7 @@ export class Customers {
     });
   }
   deleteCustomerDetails(): void {
-    const apiurl = "https://gadget-shop-pk.netlify.app/Customer/?CustomerId=" + this.customerIdToDelete;
+    const apiurl = "https://localhost:7261/api/Customer/?CustomerId=" + this.customerIdToDelete;
     this.httpClient.delete<any>(apiurl).subscribe({
       next: (data) => {
         console.log('Delete response:', data);
