@@ -75,7 +75,7 @@ export class Inventory {
   }
 
   onSubmit() {
-    const apiurl = 'https://gadget-shop-pk.netlify.app/api/Inventory';
+    const apiurl = 'https://gadget-shop-pk.netlify.app/Inventory';
     const headers = new HttpHeaders({
       Authorization: 'my-auth-token',
       'Content-Type': 'application/json'
@@ -119,7 +119,7 @@ export class Inventory {
   }
 
   deleteInvetory(): void {
-    let apiurl = "https://gadget-shop-pk.netlify.app/api/Inventory/?productId=" + this.productIdToDelete;
+    let apiurl = "https://gadget-shop-pk.netlify.app/Inventory/?productId=" + this.productIdToDelete;
     this.httpClient.delete(apiurl).subscribe(data => {
       this.loadInventory();
     });
