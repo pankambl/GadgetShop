@@ -35,7 +35,7 @@ export class CustomersDialogBox {
   }
 
   onAddCustomer() {
-    let apiurl = "https://localhost:7261/api/Customer";
+    let apiurl = "https://gadget-s.netlify.app/api/Customer";
 
     let headers = new HttpHeaders({
       Authorization: 'my-auth-token',

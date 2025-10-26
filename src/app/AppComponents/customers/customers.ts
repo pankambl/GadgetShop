@@ -88,7 +88,7 @@ export class Customers {
     });
   }
   deleteCustomerDetails(): void {
-    const apiurl = "https://localhost:7261/api/Customer/?CustomerId=" + this.customerIdToDelete;
+    const apiurl = "https://gadget-s.netlify.app/api/Customer/?CustomerId=" + this.customerIdToDelete;
     this.httpClient.delete<any>(apiurl).subscribe({
       next: (data) => {
         console.log('Delete response:', data);
